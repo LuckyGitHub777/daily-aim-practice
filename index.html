@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Daily Aim — One Meaningful Move</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="shell">
+ <header class="top"><div class="symbol" aria-hidden="true">◎</div><div class="kicker">A quiet practice for deliberate progress</div><h1>Daily Aim</h1><p class="intro">Choose what matters. Take one meaningful move. Record what happened.</p></header>
+ <section class="workspace" aria-label="Daily Aim workspace">
+  <div class="lead"><span id="step" class="step">Step 1 of 5</span><p id="guidance" aria-live="polite">Name one meaningful aim.</p></div>
+  <form id="practice-form" autocomplete="off">
+   <div class="field"><label for="aim">01 · What are you building toward?</label><textarea id="aim" maxlength="2000" rows="2" placeholder="One meaningful aim, written in your own words"></textarea></div>
+   <div class="field"><label for="reason">02 · Why does it matter?</label><textarea id="reason" maxlength="2000" rows="2" placeholder="The human reason behind the aim"></textarea></div>
+   <div class="field"><label for="nextMove">03 · What is one useful next move?</label><textarea id="nextMove" maxlength="2000" rows="2" placeholder="Something you can actually do"></textarea></div>
+   <div class="field"><label for="result">04 · What happened?</label><select id="result"><option value="planned">Not yet attempted</option><option value="done">Done</option><option value="partly">Partly done</option><option value="not-done">Not done</option></select></div>
+   <div class="field"><label for="evidence">05 · What did you observe or learn?</label><textarea id="evidence" maxlength="2000" rows="3" placeholder="Separate direct observations from assumptions"></textarea></div>
+  </form>
+  <div class="actions"><button type="button" id="export-json" class="primary">Export JSON</button><button type="button" id="export-md">Export note</button><label class="upload" for="import-json">Import JSON</label><input type="file" accept=".json,application/json" id="import-json" hidden><button type="button" id="clear" class="quiet">Clear</button></div>
+  <p class="notice" id="notice" role="status" aria-live="polite">Unsaved in this tab — export to keep your work.</p>
+ </section>
+ <footer>Local and session-only. No account, analytics, network requests, browser storage, or automatic synchronization. Your observations are self-reported; no result is guaranteed.</footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
