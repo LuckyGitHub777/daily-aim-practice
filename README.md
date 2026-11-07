@@ -1,6 +1,8 @@
 # Daily Aim — One Meaningful Move
 
-A small, local-first daily practice for turning one meaningful aim into an action, recording what actually happened, and learning from the result. This **standalone static edition** is not a hosted account service or the full multiroute web application.
+**Explore online:** [Open the public browser experience](https://luckygithub777.github.io/daily-aim-practice/). Use the static browser experience with local-device notes; this is not an account-backed service.
+
+A small, browser-first daily practice for turning one meaningful aim into an action, recording what actually happened, and learning from the result. This **standalone static edition** is not a hosted account service or the full multiroute web application.
 
 ## Use
 
