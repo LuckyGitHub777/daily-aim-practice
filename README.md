@@ -1,6 +1,6 @@
 # Daily Aim — One Meaningful Move
 
-A small, local-first daily practice for turning one meaningful aim into an action, recording what actually happened, and learning from the result. This **standalone static edition** is not a hosted account service or the full multiroute web application.
+A small, local-first daily practice for turning one meaningful aim into an action, recording what actually happened, and learning from the result. This **standalone static application** is not a hosted account service.
 
 ## Use
 
@@ -10,7 +10,7 @@ The interface keeps information **only in the current tab memory** until you exp
 
 ## Check
 
-Run `node --test tests/test_practice.mjs` with Node.js 20+ to verify the local practice model. Run `python -m unittest discover -s tests -v` for the source manifest and bundled link checks. The underlying model lives in [lib/practice.mjs](lib/practice.mjs), and all dependencies are local to this edition.
+Run `node --test tests/test_practice.mjs` with Node.js 20+ to verify the local practice model. Run `python -m unittest discover -s tests -v` for the source manifest and bundled link checks. The underlying model lives in [lib/practice.mjs](lib/practice.mjs), and all dependencies are local to this application.
 
 ## Rights and evidence
 
